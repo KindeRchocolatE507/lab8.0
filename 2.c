@@ -6,7 +6,8 @@ else return fib(a-1)+fib(a-2);
 }
 int main(){
 int a;
-scanf("%d",&a);
+while(scanf("%d",&a)!=EOF){
 if(a>=0) printf("число фибоначчи номер %d равен %d\n", a, fib(a));
 else printf("Ошибка: введенное число отрицательно.\n");
+}
 }
